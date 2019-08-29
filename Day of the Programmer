@@ -1,0 +1,36 @@
+#include <stdio.h>
+int main() {
+  int year, date;
+  scanf("%d", &year);
+  if (year >= 1700 && year <= 2700) {
+    if (year >= 1700 && year <= 1917) {
+      if (year % 4 == 0) {
+        date = 256 - 244;
+        printf("%d.09.%d", date, year);
+      } else if (year % 100 == 0 && year % 400 == 0) {
+        date = 256 - 244;
+        printf("%d.09.%d", date, year);
+      } else {
+        date = 256 - 243;
+        printf("%d.09.%d", date, year);
+      }
+    } else if (year == 1918)
+      printf("26.09.1918");
+    else if (year % 100 == 0) {
+      if (year % 400 == 0) {
+        date = 256 - 244;
+        printf("%d.09.%d", date, year);
+      } else {
+        date = 256 - 243;
+        printf("%d.09.%d", date, year);
+      }
+    } else if (year % 4 == 0) {
+      date = 256 - 244;
+      printf("%d.09.%d", date, year);
+    } else {
+      date = 256 - 243;
+      printf("%d.09.%d", date, year);
+    }
+  }
+  return 0;
+}
