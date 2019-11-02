@@ -10,7 +10,8 @@ checking to see if they can be rearranged into a palindrome.
 For example, given the string , one way it can be arranged into a palindrome is .
 
 *Function Description
-Complete the gameOfThrones function below to determine whether a given string can be rearranged into a palindrome. If it is possible, return YES, otherwise return NO.
+Complete the gameOfThrones function below to determine whether a given string can be rearranged into a palindrome.
+ If it is possible, return YES, otherwise return NO.
 
 gameOfThrones has the following parameter(s):
 s: a string to analyze
